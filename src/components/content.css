@@ -1,0 +1,353 @@
+.content{
+    grid-area: 'content';
+    background-color: '#FFF';
+    height: 100%;
+}
+
+.introducao{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    border-bottom: rgb(146, 146, 146) solid 2px;
+}
+
+.introducao-img{
+    width: 50%;
+}
+
+.introducao-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.introducao-text h1{
+    padding: 15px;
+}
+
+.introducao-text{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.introducao-text p{
+    margin-left: 30px;
+}
+
+.introducao-text h1{
+    color: rgb(44, 44, 100);
+    font-weight: bold;
+}
+
+.introducao-text img{
+    height: 15%;
+    width: 15%x;
+    margin: 6px;
+    align-self: center;
+}
+
+.apresentacao{
+    min-height: 100vh;
+    background-image: url('../assets/foto-5.jpg') ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.apresentacao h1 {
+    margin: 20px;
+    font-size: 3.5rem;
+    font-size: bold;
+}
+.apresentacao h2{
+    margin: 20px;
+    font-weight: 300;
+}
+
+.background-apresentacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+
+.link-insta{
+    float: right;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 670px;
+    padding: 20px;
+    border:rgb(255, 255, 255) solid 4px;
+    border-radius: 8px;
+}
+
+.link-insta:hover{
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.link-insta a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-insta img{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.icone-div{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-power-mobile{
+    height: 160px;
+    width: 295px;
+}
+
+
+.about{
+    min-height: 100vh;
+    border-top: 4px;
+    border-color: black;
+    padding: 30px;
+}
+.about p{
+    margin-top: 50px;
+}
+
+.contact {
+    min-height: 50vh;
+    background-color: rgb(104, 104, 219);
+}
+
+.contact *{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.event h1{
+    padding: 20px;
+    display: flex;
+}
+
+.slider {
+    align-self: center;
+    min-height: 100vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: rgb(90, 90, 90) solid 3px;
+    border-radius: 4px;
+    background-color: #ddd;
+}
+
+.slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.slider img{
+    max-width: 400px;
+}
+
+.image-slider{
+    height: 600px;
+    width: 400px;
+}
+.carousel-item{
+    overflow: hidden;
+}
+
+.content p{
+    font-size: 1.2rem;
+}
+
+
+.anuncie{
+    display: flex;
+    min-height: 100vh;
+    background-image: url('../assets/power-mobile-icone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45% 70%;
+    color: #fff;
+}
+
+.anuncie-content{
+    flex: 1;
+    background-color: rgba(110, 110, 110, 0.562);
+}
+.anuncie h1{
+    padding: 20px;
+}
+
+.contact h3{
+    font-size: 1.2rem;
+}
+.contact p{
+    font-size: 0.96rem;
+}
+
+
+
+.row{
+    border: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(90, 90, 90, 0.219), rgba(58, 58, 58, 0.856), rgba(90, 90, 90, 0.219))
+}
+
+.logo-insta{
+    display: block;
+    float: right;
+    margin-right: 20px;
+}
+
+.battery{
+    color: black;
+}
+
+
+/*component items*/
+
+.items-container{
+    min-height: 100vh;
+    padding: 20px;
+}
+.items-container h1{
+    margin-left: 20px;
+}
+
+.all-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-content{
+    height: 54vh;
+    width: 300px;
+    background-color: rgb(233, 233, 233);
+    border: rgba(0, 0, 0, 0.274) solid 2px;
+    border-radius: 5px;
+    margin: 17px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+.items-content:hover {
+    height: 57vh;
+    width: 320px;
+    transition: 0.6s;
+    box-shadow: 7px 7px 7px rgb(116, 116, 116) ;
+}
+
+.items-content img{
+    width: 100%;
+    height: 48%;
+}
+.items-content li {
+    margin-top: 15px;
+}
+
+.items-content strong{
+    margin: 10px;
+}
+
+.banner{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+}
+
+.banner div{
+    background-image: linear-gradient(to right, rgba(60, 235, 113, 0.473), rgb(56, 170, 91, 0.473));
+    border: rgb(65, 65, 65) solid 2px;
+    border-radius: 3px;
+    padding: 15px;
+    height: 460px;
+}
+
+.banner div:hover {
+    background-image: linear-gradient(to right, rgb(60, 235, 112), rgb(56, 170, 91));
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form button{
+    margin: 20px;
+    width: 25%;
+    align-self: center;
+    background-color: rgba(47, 158, 93, 0.507);
+    border-radius: 3px;
+    border: #000 solid 1px;
+    font-weight: bold;
+}
+
+.form input{
+    border-radius: 3px;
+    border: rgba(0, 0, 0, 0.562) solid 1px;
+    background-color: #ddd;
+}
+
+.banner h1{
+    font-size: 1.5rem;
+}
+
+
+@media(max-width: 750px){ /*saiu de 759px de largura vai aplicar */
+    .link-insta{
+        display: none;
+    }
+    .items-content{
+        width: 80%;
+        height: 50vh;
+    }
+    .slider{
+        width: 100%;
+    }
+    .anuncie{
+        background-size: 100% 50%;
+    }
+    .introducao{
+        flex-direction: column;
+    }
+    .introducao-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .introducao-img{
+        width: 100%;
+        height: 50%;
+    }
+    .introducao-text{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+
