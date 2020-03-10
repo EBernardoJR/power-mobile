@@ -41,7 +41,6 @@ function Items(props){
 export default function Content(){
 
     useEffect(() => {
-          // Initialize Firebase
           firebase.initializeApp(firebaseConfig)
     }, [])
 
