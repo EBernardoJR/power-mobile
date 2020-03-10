@@ -20,7 +20,6 @@ import iconeIntroducao2 from '../assets/fun.png'
 import firebase from 'firebase'
 import "firebase/auth";
 import "firebase/firestore";
-import firebaseConfig from '../.env'
 
 
 function Items(props){
@@ -41,6 +40,9 @@ function Items(props){
 export default function Content(){
 
     useEffect(() => {
+
+        const firebaseConfig = process.env.REACT_APP_FIREBASE 
+
           firebase.initializeApp(firebaseConfig)
     }, [])
 
