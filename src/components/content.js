@@ -20,6 +20,7 @@ import iconeIntroducao2 from '../assets/fun.png'
 import firebase from 'firebase'
 import "firebase/auth";
 import "firebase/firestore";
+import firebaseConfig from '../.env'
 
 
 function Items(props){
@@ -40,17 +41,6 @@ function Items(props){
 export default function Content(){
 
     useEffect(() => {
-
-        var firebaseConfig = {
-            apiKey: "AIzaSyCyMQkBOTvapfEkQpB7f-8mONRMIBFZ2ew",
-            authDomain: "power-mobile-c4e5e.firebaseapp.com",
-            databaseURL: "https://power-mobile-c4e5e.firebaseio.com",
-            projectId: "power-mobile-c4e5e",
-            storageBucket: "power-mobile-c4e5e.appspot.com",
-            messagingSenderId: "877502390674",
-            appId: "1:877502390674:web:85453122400a7f4e26614b",
-            measurementId: "G-8PTJYV48DY"
-          };
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig)
     }, [])
