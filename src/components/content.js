@@ -107,7 +107,7 @@ export default function Content(){
         <hr></hr>
         <div className='products' id="products">
             <div className="product-item">
-            <h1>Produtos</h1>
+            <h1>Produtos:</h1>
                 <h2>TOTEM CARREGADOR</h2>
                 <div className="products-img">
                     <img src={foto5} />
@@ -118,9 +118,9 @@ export default function Content(){
 
                 <p>Dimensões:
                 <ul>
-                    <li><strong>Largura</strong>: 0,50 m</li>
-                    <li><strong> Profundidade</strong>: 0,20 m</li>
-                    <li><strong>Altura</strong>: 1,70 m</li>
+                    <li><strong>Largura:</strong> 0,50 m</li>
+                    <li><strong> Profundidade:</strong> 0,20 m</li>
+                    <li><strong>Altura:</strong> 1,70 m</li>
                 </ul>
                 </p>
                 <hr></hr>
@@ -136,10 +136,10 @@ Adquira estação de recarga para seu comércio para ninguém ficar sem carga na
                 <p>
                 Especificações:
                 <ul>
-                    <li><strong>Bateria</strong>: lítio</li>
-                    <li><strong>Capacidade memória expansível</strong>: 10.000 mAh</li>
-                    <li><strong>Entrada</strong>: 5V/2.1a</li>
-                    <li><strong>Saídas</strong>: 5V/6a</li>
+                    <li><strong>Bateria:</strong> lítio</li>
+                    <li><strong>Capacidade memória expansível:</strong>: 10.000 mAh</li>
+                    <li><strong>Entrada:</strong> 5V/2.1a</li>
+                    <li><strong>Saídas:</strong> 5V/6a</li>
                 </ul>
                 </p>
             </div>
