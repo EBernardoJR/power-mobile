@@ -284,7 +284,8 @@
     border: rgb(65, 65, 65) solid 2px;
     border-radius: 3px;
     padding: 15px;
-    height: 460px;
+    height: 490px;
+    margin-bottom: 40px;
 }
 
 .banner div:hover {
