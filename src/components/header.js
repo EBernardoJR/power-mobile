@@ -18,6 +18,7 @@ export default function Header(){
         <div className='items'>
                 <a href='#about'>Sobre</a>
                 <a href='#event'>Eventos</a >
+                <a href='#products'>Produtos</a >
                 <a href='#anuncie'>Anuncie Conosco</a >
                 <a href='#contact'>Contato</a>
         </div>
@@ -30,6 +31,7 @@ export default function Header(){
 <div className='toggle collapse' id='header'>
 <a href='#about'>Sobre</a>
                 <a href='#event'>Eventos</a >
+                <a href='#products'>Produtos</a >
                 <a href='#anuncie'>Anuncie Conosco</a >
                 <a href='#contact'>Contato</a>
                 <spam className="logo-insta">

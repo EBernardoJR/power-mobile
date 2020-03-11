@@ -8,7 +8,7 @@ export default function Footer(){
         <div class='footer'>
             <p><strong>Power Mobile </strong>&copy; 2020 - Todos os Direitos Reservados</p>
             <p>Desenvolvido por <img src={bernardoInc} alt="Logo Bernardo"/></p>
-                <span className="version">version @1.0.0</span>
+                <span className="version">version @1.1.0</span>
       
         </div>
     )

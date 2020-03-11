@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './content.css'
-import foto1 from '../assets/foto-1.jpg'
 import foto2 from '../assets/foto-2.jpg'
 import foto3 from '../assets/foto-3.jpg'
 import foto4 from '../assets/foto-4.jpg'
+import foto5 from '../assets/foto-5.jpg'
 import icone from '../assets/power_mobile_logo.png'
 import logoInsta from '../assets/instagram.png'
 import logoInstaBranco from '../assets/instagram-branco.png'
@@ -17,6 +17,7 @@ import introducaoImg1 from '../assets/background-image.jpg'
 import introducaoImg2 from '../assets/bateria-iphone.jpg'
 import iconeIntroducao1 from '../assets/idea.png'
 import iconeIntroducao2 from '../assets/fun.png'
+import carregador from '../assets/carregador.jpg'
 import firebase from 'firebase'
 import "firebase/auth";
 import "firebase/firestore";
@@ -104,6 +105,46 @@ export default function Content(){
             </div>
         </div>
         <hr></hr>
+        <div className='products' id="products">
+            <div className="product-item">
+            <h1>Produtos</h1>
+                <h2>TOTEM CARREGADOR</h2>
+                <div className="products-img">
+                    <img src={foto5} />
+                    
+                </div>
+
+                <p>Ideal para qualquer tipo de situação, o totem carregador é a solução perfeita para quem quer divulgar seu produto e sua marca de uma maneira totalmente inovadora, ele possui 8 compartimentos com chaves, disponível em cada um deles multi-carregadores do tipo: Micro USB Universal, iPhone Lightning e Type C, levando ao seu cliente a facilidade de carregar o celular e outros dispositivos móveis importantes no dia-a-dia, com segurança, em qualquer lugar e a qualquer tempo.</p>
+
+                <p>Dimensões:
+                <ul>
+                    <li><strong>Largura</strong>: 0,50 m</li>
+                    <li><strong> Profundidade</strong>: 0,20 m</li>
+                    <li><strong>Altura</strong>: 1,70 m</li>
+                </ul>
+                </p>
+                <hr></hr>
+                <h2>ESTAÇÃO DE RECARGA DE MESA</h2>
+                <div className="products-img">
+                    <img src={carregador} />
+                </div>
+                <p>Forneça um serviço adicional para seus clientes enquanto aguardam atendimento carregam o celular
+Carregador de smartphones e tablets desenvolvido especialmente para mesas e bancadas de estabelecimentos.
+Produto ideal para restaurantes, cafeterias, bar, lanchonete, consultórios médicos, salões de beleza e barbearias!
+Possui display acrilico cristal com 10x15cm para colocar publicidade e local para colocar cartão de visitas
+Adquira estação de recarga para seu comércio para ninguém ficar sem carga na bateria! Tenha uma solução prática e segura para o carregamento de smartphones, tablets entre outros dispositivos recarregáveis em sua loja. Ofereça um serviço de recarga de bateria de alta qualidade e rapidez e utilize o painel acrílico para exposição de materiais de comunicação como, cardápios, avisos entre outros.</p>
+                <p>
+                Especificações:
+                <ul>
+                    <li><strong>Bateria</strong>: lítio</li>
+                    <li><strong>Capacidade memória expansível</strong>: 10.000 mAh</li>
+                    <li><strong>Entrada</strong>: 5V/2.1a</li>
+                    <li><strong>Saídas</strong>: 5V/6a</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <hr/>
         <div className="items-container">
             <h1>Quais as vantagens ao implantar os Carregadores em seu negócio?</h1>
             <div className="all-items">
@@ -118,7 +159,7 @@ export default function Content(){
 
         <hr></hr>
         <div className='event' id="event">
-            <h1>Eventos</h1>
+            <h1>Eventos e Empresas</h1>
         
             <div className="slider-container">
                 <div className='slider'>
@@ -131,9 +172,6 @@ export default function Content(){
                         </ol>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                            <img className="d-block image-slider w-100" src={foto1} alt="First slide" />
-                            </div>
-                            <div className="carousel-item">
                             <img className="d-block  image-slider w-100" src={foto2} alt="Second slide" />
                             </div>
                             <div className="carousel-item">
@@ -165,7 +203,7 @@ export default function Content(){
                 <h1>Ficou interessado em anunciar seu negócio conosco?</h1>
                 <div className="banner">
                     <div>
-                    <h1>Faça já seu orçamento</h1>
+                    <h1>Tire suas dúvidas, faça um orçamento sem compromisso agora mesmo!</h1>
                     <form onSubmit={sendData} className='form'>
                         <label htmlFor="name">Nome:</label>
                         <input 
@@ -224,9 +262,9 @@ export default function Content(){
         <div className='contact' id='contact'>
             <h1>Contatos</h1>
             <h3>Telefones:</h3>
-            <p>(99) 99999-9999</p>
+            <p>(81) 99646-5599</p>
             <h3>Email: </h3>
-            <p>powermobile@gmail.com</p>
+            <p>contato@powermobilebr.com</p>
             <h3>Redes Socias: </h3>
             <a href="https://www.instagram.com/powermobile.br/" target='_blank' rel="noopener noreferrer"> <img src={logoInsta} alt="logo instagram"/></a>
         </div>
