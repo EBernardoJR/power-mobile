@@ -99,7 +99,7 @@ export default function Content(){
             <p>Somos uma empresa Brasileira, com sede em Recife-PE, que surgiu devido a necessidade da atualidade em se manter conectado em todo lugar e a todo momento.</p>
 
             <p>O que fazemos?
-            Desenvolvemos soluções em carregamento para celulares para ambientes comerciais e eventos atrelado a isso a publicidade estatica e mídia out of home.</p>
+            Desenvolvemos soluções em carregamento para celulares para ambientes comerciais e eventos, atrelado a isso a publicidade estatica e mídia out of home.</p>
             <div className="icone-div">
             <img src={icone} className='icone-power-mobile' alt="Icone"/>
             </div>
@@ -131,7 +131,7 @@ export default function Content(){
                 <p>Forneça um serviço adicional para seus clientes enquanto aguardam atendimento carregam o celular
 Carregador de smartphones e tablets desenvolvido especialmente para mesas e bancadas de estabelecimentos.
 Produto ideal para restaurantes, cafeterias, bar, lanchonete, consultórios médicos, salões de beleza e barbearias!
-Possui display acrilico cristal com 10x15cm para colocar publicidade e local para colocar cartão de visitas
+Possui display acrilico cristal com 10x15cm para colocar publicidade e local para colocar cartão de visitas.
 Adquira estação de recarga para seu comércio para ninguém ficar sem carga na bateria! Tenha uma solução prática e segura para o carregamento de smartphones, tablets entre outros dispositivos recarregáveis em sua loja. Ofereça um serviço de recarga de bateria de alta qualidade e rapidez e utilize o painel acrílico para exposição de materiais de comunicação como, cardápios, avisos entre outros.</p>
                 <p>
                 Especificações:
