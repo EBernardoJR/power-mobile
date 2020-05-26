@@ -9,6 +9,7 @@ export default function Header(){
     return(
         <>
     <div className="header">
+        <div className="headerStick">
         <div className="containerBar">
             <div className='icone'>
                 <a href="#" className="d-flex align-items-center">
@@ -26,7 +27,7 @@ export default function Header(){
            <img src={buttonToggle} className='buttom-img' alt="Botão toggle"/>
         </button>
         </div>
-</div>
+
 
 <div className='toggle collapse' id='header'>
 <a href='#about'>Sobre</a>
@@ -41,7 +42,8 @@ export default function Header(){
                     </a>
                 </spam>
 </div>
-
+</div>
+</div>
 </>
     )
 }

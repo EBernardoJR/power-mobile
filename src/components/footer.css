@@ -1,5 +1,5 @@
 .footer{
-    grid-area: 'footer';
+    grid-area: "footer"; 
     background-color: rgb(44, 44, 100);
     color: #fff;
     display: flex;
@@ -7,8 +7,6 @@
     justify-content: center;
     flex-direction: column;
     font-size: 0.8rem;
-    padding: 0;
-    margin: 0;
 }
 
 .footer img{

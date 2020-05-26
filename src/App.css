@@ -10,13 +10,14 @@ body{
 }
 
 div#appContainer{
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column; */
     display: grid;
-    height: 100vh;
     background-color: '#FFF';
-    grid-template-rows: 70px 1fr 130px;
+    grid-template-rows: 70px 1fr 140px;
     grid-template-columns: 1fr;
     grid-template-areas: 
-			/*linhas*/
 			"header"
 			"content"
             "footer";

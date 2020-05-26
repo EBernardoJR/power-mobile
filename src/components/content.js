@@ -18,9 +18,12 @@ import introducaoImg2 from '../assets/bateria-iphone.jpg'
 import iconeIntroducao1 from '../assets/idea.png'
 import iconeIntroducao2 from '../assets/fun.png'
 import carregador from '../assets/carregador.jpg'
+import powermobileIcon from '../assets/power-mobile-icone.png'
 import firebase from 'firebase'
 import "firebase/auth";
 import "firebase/firestore";
+import setaDireita from '../assets/seta direita - branca.svg'
+import setaBaixo from '../assets/seta pra baixo - branca.svg'
 
 
 function Items(props){
@@ -80,7 +83,7 @@ export default function Content(){
         <hr></hr>
         <div className='introducao'>
             <div className="introducao-text">
-                <img src={iconeIntroducao1} />
+            <img src={iconeIntroducao1} className="icone-introduction" />
                 <h1>Torne sua empresa moderna</h1>
                 <p>Destaque sua empresa dentre as outras levando modernidade e conformidade.</p>
             </div>
@@ -88,7 +91,7 @@ export default function Content(){
         </div>
         <div className='introducao'>
             <div className="introducao-text">
-                <img src={iconeIntroducao2} />
+                <img src={iconeIntroducao2} className="icone-introduction"/>
                 <h1>Mantenha seus clientes confortados</h1>
                 <p>Forneça aos seus clientes experiências agradáveis e inesqueciveis. </p>
             </div>
@@ -199,64 +202,97 @@ Adquira estação de recarga para seu comércio para ninguém ficar sem carga na
         </div>
 
         <div className="anuncie" id="anuncie">
+
+
             <div className="anuncie-content">
+                <div>
                 <h1>Ficou interessado em anunciar seu negócio conosco?</h1>
-                <div className="banner">
-                    <div>
-                    <h1>Tire suas dúvidas, faça um orçamento sem compromisso agora mesmo!</h1>
+                <h2>Tire suas dúvidas, faça um orçamento sem compromisso agora mesmo!</h2>
+                </div>
+                <div className="anuncie-icon">
+                    <img src={powermobileIcon} />
+                </div>
+                <a href="#banner">
+                <div className="button-to-banner">
+                    Entrar em contato
+                    <img src={setaBaixo} alt="seta para baixo" />
+                </div>
+                </a>
+            </div>
+
+            <div className="banner" id="banner">
+                    <div className='div-form'>
                     <form onSubmit={sendData} className='form'>
-                        <label htmlFor="name">Nome:</label>
+                        
                         <input 
                         id="name"
                         type='text'
                         value={name}
                         onChange={e => setName(e.target.value)}
-                        placeholder="Exemplo: José da Silva"
+                        placeholder="Nome"
                         required
                         />
-                        <label htmlFor="email">Email:</label>
+                    
                         <input 
                         id="email"
                         type='text'
                         value={email}
                         onChange={e => setEmail(e.target.value)}
-                        placeholder="Exemplo: josedasilva@gmail.com"
+                        placeholder="Email"
                         required
                         />
-                        <label htmlFor="empresa">Empresa:</label>
+                      
                         <input 
                         id="empresa"
                         type='text'
                         value={empresa}
                         onChange={e => setEmpresa(e.target.value)}
-                        placeholder="Exemplo: Power Mobile"
+                        placeholder="Empresa"
                         required
                         />
-                        <label htmlFor="city">Cidade - Estado:</label>
+                        <div className="location">
+
+
                         <input 
                         id="city"
                         type='text'
                         value={city}
                         onChange={e => setCity(e.target.value)}
-                        placeholder="Exemplo: Recife - PE"
+                        placeholder="Cidade"
                         required
                         />
-                        <label htmlFor="number">Nome:</label>
+
+                        <input 
+                        id="uf"
+                        type='text'
+                        value={city}
+                        onChange={e => setCity(e.target.value)}
+                        placeholder="UF"
+                        required
+                        />
+                    
+                        </div>
                         <input 
                         id="number"
                         type='text'
                         value={number}
                         onChange={e => setNumber(e.target.value)}
-                        placeholder="Exemplo: (00) 00000-0000"
+                        placeholder="Telefone"
                         required
                         />
+                        
+                        <div className="div-button">
 
-                        <button type='submit'>Enviar</button>
+                        <button type='submit'>Enviar
+                        <img src={setaDireita} alt="seta direita" />
+                        </button>
+
+
+                        </div>
                     </form>
                     </div> 
-                </div>
-
             </div>
+
         </div>
 
         <div className='contact' id='contact'>
