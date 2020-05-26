@@ -53,8 +53,12 @@ export default function Content(){
     const [ name, setName ] = useState('')
     const [ empresa, setEmpresa ] = useState('')
     const [ number, setNumber ] = useState('')
-    const [ city, setCity ] = useState('')
+    const [ location, setlocation ] = useState({ city: '', uf: ''})
     const [ email, setEmail ] = useState('')
+
+
+    console.log(location)
+
 
     function sendData(){
          
@@ -256,8 +260,8 @@ Adquira estação de recarga para seu comércio para ninguém ficar sem carga na
                         <input 
                         id="city"
                         type='text'
-                        value={city}
-                        onChange={e => setCity(e.target.value)}
+                        value={location.city}
+                        onChange={e => setlocation({...location, city: e.target.value})}
                         placeholder="Cidade"
                         required
                         />
@@ -265,8 +269,8 @@ Adquira estação de recarga para seu comércio para ninguém ficar sem carga na
                         <input 
                         id="uf"
                         type='text'
-                        value={city}
-                        onChange={e => setCity(e.target.value)}
+                        value={location.uf}
+                        onChange={e => setlocation({...location, uf: e.target.value})}
                         placeholder="UF"
                         required
                         />
