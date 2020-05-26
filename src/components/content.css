@@ -150,7 +150,7 @@ hr{
 }
 
 .products * {
-    padding: 20px;
+    padding: 10px;
 }
 
 .products-img{
@@ -164,6 +164,16 @@ hr{
     max-width: 80%;
     max-height: 600px;
     border-radius: 4px;
+}
+
+.product-item li {
+    list-style: none;
+    border-left: #2C2C68 solid 5px;
+    margin-top: 20px;
+}
+
+.product-item li:hover {
+    border-left: #2C2C68 solid 15px;
 }
 
 .contact {
@@ -311,7 +321,7 @@ hr{
     margin-top: 5%;
     height: 50px;
     border: none;
-    border-bottom: rgb(144, 144, 144) solid 3px;
+    border-bottom: rgb(144, 144, 144) solid 2px;
     font-size: 1.2rem;
     padding: 10px;
     font-weight: bold;
@@ -438,6 +448,19 @@ hr{
 
 
 @media(max-width: 1030px){ /*saiu de 759px de largura vai aplicar */
+
+    .content h1 {
+        font-size: 1.5em;
+    }
+
+    .content h2 {
+        font-size: 1.3em;
+    }
+
+    .apresentacao h1 {
+        font-size: 1.8rem;
+    }
+
     .link-insta{
         display: none;
     }
