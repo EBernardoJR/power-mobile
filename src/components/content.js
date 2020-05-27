@@ -5,7 +5,7 @@ import foto3 from '../assets/foto-3.jpg'
 import foto4 from '../assets/foto-4.jpg'
 import foto5 from '../assets/foto-5.jpg'
 import icone from '../assets/power_mobile_logo.png'
-import logoInsta from '../assets/instagram.png'
+import logoInsta from '../assets/instagram.svg'
 import logoInstaBranco from '../assets/instagram-branco.png'
 import iconeCarro from '../assets/icone-carro.png'
 import iconeRestaurant from '../assets/food.png'
@@ -24,6 +24,10 @@ import "firebase/auth";
 import "firebase/firestore";
 import setaDireita from '../assets/seta direita - branca.svg'
 import setaBaixo from '../assets/seta pra baixo - branca.svg'
+import productBanner from '../assets/product-banner.png'
+import duasSetas from '../assets/chevrons-down.svg'
+import backgroundContact from '../assets/background-contato.png'
+
 
 
 function Items(props){
@@ -81,7 +85,7 @@ export default function Content(){
             <h1>Fácil, Rápido e Seguro</h1>
            <h2>Uma nova forma de recarregar seu Celular</h2>
            
-            <span className="link-insta"><a href='https://www.instagram.com/powermobile.br/' rel="noopener noreferrer" target="_blank">Acesse nosso Instagram e fique por dentro de todas as novidades <img src={logoInstaBranco} alt="Logo Instagram"/></a></span>
+            <span className="link-insta"><a href='https://www.instagram.com/powermobile.br/' rel="noopener noreferrer" target="_blank">Acesse nosso Instagram e fique por dentro de todas as novidades <img src={logoInsta} alt="Logo Instagram"/></a></span>
             </div>
         </div>
         <hr></hr>
@@ -113,14 +117,31 @@ export default function Content(){
         </div>
         <hr></hr>
         <div className='products' id="products">
-            <div className="product-item">
-            <h1>Produtos:</h1>
-                <h2>TOTEM CARREGADOR</h2>
+
+            <div className="product-banner">
+                <div className="product-banner-img">
+                    <img src={productBanner} alt="product banner"/>
+                </div>
+                <div className="product-banner-text">
+                    <p className='first'>Ficou curioso? conheça alguns dos nossos <br/><span id='title'>produtos</span></p>
+                   <p className='link-product'> <a href="#product-item">Confira abaixo <img src={duasSetas} alt="seta"/> </a></p>
+                </div>
+            </div>
+
+
+        
+        
+            <hr></hr>
+            <div className="product-item" id='product-item'>
                 <div className="products-img">
+                <p>
+                <h2>TOTEM CARREGADOR</h2>
+                </p>
                     <img src={foto5} />
                     
                 </div>
 
+                <div className="product-description">
                 <p>Ideal para qualquer tipo de situação, o totem carregador é a solução perfeita para quem quer divulgar seu produto e sua marca de uma maneira totalmente inovadora, ele possui 8 compartimentos com chaves, disponível em cada um deles multi-carregadores do tipo: Micro USB Universal, iPhone Lightning e Type C, levando ao seu cliente a facilidade de carregar o celular e outros dispositivos móveis importantes no dia-a-dia, com segurança, em qualquer lugar e a qualquer tempo.</p>
 
                 <p>Dimensões:
@@ -130,11 +151,21 @@ export default function Content(){
                     <li><strong>Altura:</strong> 1,70 m</li>
                 </ul>
                 </p>
+                </div>
+
+            </div> 
                 <hr></hr>
-                <h2>ESTAÇÃO DE RECARGA DE MESA</h2>
+
+            <div className="product-item">   
                 <div className="products-img">
+                    <p>
+                        <h2>ESTAÇÃO DE RECARGA DE MESA</h2>
+                    </p>
                     <img src={carregador} />
                 </div>
+
+
+                <div className="product-description">
                 <p>Forneça um serviço adicional para seus clientes enquanto aguardam atendimento carregam o celular
 Carregador de smartphones e tablets desenvolvido especialmente para mesas e bancadas de estabelecimentos.
 Produto ideal para restaurantes, cafeterias, bar, lanchonete, consultórios médicos, salões de beleza e barbearias!
@@ -149,9 +180,13 @@ Adquira estação de recarga para seu comércio para ninguém ficar sem carga na
                     <li><strong>Saídas:</strong> 5V/6a</li>
                 </ul>
                 </p>
+                </div>
             </div>
         </div>
         <hr/>
+
+
+
         <div className="items-container">
             <h1>Quais as vantagens ao implantar os Carregadores em seu negócio?</h1>
             <div className="all-items">
@@ -300,13 +335,20 @@ Adquira estação de recarga para seu comércio para ninguém ficar sem carga na
         </div>
 
         <div className='contact' id='contact'>
+            <div className='contact-data'>
             <h1>Contatos</h1>
+            <div>
             <h3>Telefones:</h3>
             <p>(81) 99646-5599</p>
             <h3>Email: </h3>
             <p>contato@powermobilebr.com</p>
             <h3>Redes Socias: </h3>
             <a href="https://www.instagram.com/powermobile.br/" target='_blank' rel="noopener noreferrer"> <img src={logoInsta} alt="logo instagram"/></a>
+            </div>
+            </div>
+            <div className='contact-image'>
+                <img src={backgroundContact} alt="background-contato"/>
+            </div>
         </div>
     </div>
 

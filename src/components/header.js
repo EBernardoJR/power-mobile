@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import Logo from '../assets/power_mobile_logo_branco.png'
-import buttonToggle from '../assets/menu.png'
+import buttonToggle from '../assets/menu.svg'
 import logoInsta from '../assets/instagram.png'
 
 
